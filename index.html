@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>English tutor</title>
-		<meta name="keywords" content="ingles curso trabajos" />
-	</head>
-	<body>
-		<header class="header">
-			<h1 class="header__title">Titulo de la pagina</h1>
-			<nav class="header__nav">
-				<ul class="header__nav__menu">
-					<li class="header__menu__item">Servicios</li>
-					<li class="header__menu__item">Precios</li>
-					<li class="header__menu__item">Contactos</li>
-				</ul>
-			</nav>
-			<div class="header__container">
-				<div class="header__container__subcontainer">
-					<h4 class="heade__subcontainer__welcome">Welcome</h4>
-					<h2 class="header__subcontainer__title">
-						Frase motivadora de la pagina
-					</h2>
-					<h3 class="header__subcontainer__subtitle">
-						Frase motivadora para converser a la gente de quedarse
-					</h3>
-				</div>
-				<div class="header__subcontainer__buttoms">
-					<a href="" class="header__buttoms__link">Servicios disponibles</a>
-					<a href="" class="header__buttoms__link">Leer mas</a>
-				</div>
-			</div>
-			<div class="header__cards">
-				<div class="header__card__container">
-					<div class="card__container">
-						<div class="card__container__icon">
-							<div class="card__icon" id="flag"></div>
-						</div>
-					</div>
-				</div>
-				<div class="header__card__container">
-					<div class="card__container">
-						<div class="card__container__icon">
-							<div class="card__icon" id="books"></div>
-						</div>
-					</div>
-				</div>
-				<div class="header__card__container">
-					<div class="card__container">
-						<div class="card__container__icon">
-							<div class="card__icon" id="reload"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English tutor</title>
+    <link rel="stylesheet" href="./view/css/style.css" />
+    <meta name="keywords" content="ingles curso trabajos" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <svg
+        width="1440"
+        height="500"
+        viewBox=" 100 300 1440 500"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="header__background"
+      >
+        <path
+          d="M0 0H1440V379H0V0ZM0 509L360 725H720L1080 509L1440 595V379H0V509Z"
+          fill="#563D7C"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 0H1440V379H0V0ZM0 509L360 725H720L1080 509L1440 595V379H0V509Z"
+          fill="#563D7C"
+        />
+      </svg>
+
+      <div class="header__main">
+        <h1 class="header__title">Titulo de la pagina</h1>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="menu__item">
+              <a href="" class="menu__link">Servicios</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Precios</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__container">
+        <div class="header__content">
+          <h4 class="header__subtitle">Welcome</h4>
+          <h2 class="header__text header__text--big">
+            Frase motivadora de la pagina
+          </h2>
+          <h3 class="header__text header__text--small">
+            Frase motivadora para converser a la gente de quedarse
+          </h3>
+          <div class="header__buttoms">
+            <a href="" class="header__buttom header__buttom--blue">Trabajos</a>
+            <a href="" class="header__buttom header__buttom--light">Leer mas</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+  <main class="main">
+    <div class="main__cards">
+      <article class="card">
+        <div class="card__content">
+          <div class="card__icon" id="flag">a</div> 
+           <h3 class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit rem, possimus explicabo, tenetur rerum sunt dolorem autem animi totam, repellat nam aperiam voluptatum quae assumenda sit corrupti placeat quas.</h3>
+        </div>
+      
+      </article>
+
+      <article class="card">
+        <div class="card__content">
+          <div class="card__icon" id="books">b</div>
+  <h3 class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit rem, possimus explicabo, tenetur rerum sunt dolorem autem animi totam, repellat nam aperiam voluptatum quae assumenda sit corrupti placeat quas.</h3>
+        </div>
+      
+      </article>
+
+      <article class="card">
+        <div class="card__content">
+          <div class="card__icon" id="reload">c</div>
+      <h3 class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit rem, possimus explicabo, tenetur rerum sunt dolorem autem animi totam, repellat nam aperiam voluptatum quae assumenda sit corrupti placeat quas.</h3>
+        </div>
+  
+      </article>
+    </div>
+    </main>
+  </body>
 </html>
