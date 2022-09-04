@@ -174,12 +174,13 @@ body {
 	width: 100%;
 }
 .card {
-	display: inherit;
-	flex-flow: inherit;
+	display: flex;
+	flex-flow: column wrap;
 	justify-content: center;
+	align-content: center;
 	text-align: center;
 	width: 33.3%;
-	height: 28vh;
+	height: 100%;
 	padding: 0.5em 0.3em;
 	font-size: calc(var(--small) - 2px);
 	letter-spacing: var(--spaceSecond);
@@ -196,7 +197,7 @@ body {
 	padding: 1em;
 	gap: 1.25em;
 }
-.card__image {
+/* .card__image {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -204,33 +205,23 @@ body {
 	width: 45%;
 	height: auto;
 	position: relative;
-}
+} */
 .card__bg {
-	position: relative;
 	display: flex;
+	flex-flow: column wrap;
 	justify-content: center;
-	align-items: center;
-	width: 60%;
-	height: 100%;
+	width: 25%;
+	height: 6vh;
 	padding: 1.2em 1.3em;
 	border-radius: 5px;
 	background: var(--dangerColor);
 }
 .card__icon {
 	width: 100%;
-	height: 4vh;
+	height: 3vh;
+	flex: 1 1 auto;
 }
 
-.card__icon--flag {
-	background: url("../../src/svg/coolicon.svg") no-repeat;
-}
-.card__icon--books {
-	background: url("../../src/svg/coolicon2.svg") no-repeat;
-	top: 15%;
-}
-.card__icon--reload {
-	background: url("../../src/svg/coolicon3.svg") no-repeat;
-}
 .card__title {
 	font-size: calc(var(--small) + 3px);
 	font-weight: 700;
@@ -241,10 +232,11 @@ body {
 	text-transform: capitalize;
 }
 .card__separator {
-	width: 3.96em;
-	border: solid 1px var(--dangerColor);
+	width: 8em;
+	/* 	border: solid 1px var(--dangerColor); */
+	background: var(--dangerColor);
 	border-radius: 5px;
-	height: 2px;
+	height: 0.5vh;
 }
 .card__text {
 	font-size: calc(var(--small) + 1px);
