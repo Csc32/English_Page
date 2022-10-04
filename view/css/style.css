@@ -42,8 +42,9 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: 100%;
+	overflow: hidden;
 	color: var(--lightTextColor);
 }
 .header__background {
@@ -351,6 +352,10 @@ html {
 	.header__text.header__text--big {
 		font-size: calc(var(--small) + 2px);
 		line-height: 3rem;
+	}
+	.header__buttom {
+		width: 100vw;
+		height: 7vh;
 	}
 	.main__cards {
 		display: flex;
