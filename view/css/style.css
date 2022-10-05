@@ -31,10 +31,10 @@
 body {
 	display: flex;
 	flex-flow: column wrap;
-	align-content: center;
 	justify-content: center;
+	align-content: center;
 	overflow-x: hidden;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	background: var(--lightBg);
 }
@@ -42,7 +42,11 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	position: relative;
+<<<<<<< HEAD
 	width: 100%;
+=======
+	width: inherit;
+>>>>>>> gh-pages
 	height: 100%;
 	overflow: hidden;
 	color: var(--lightTextColor);
@@ -175,9 +179,11 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	width: 100vw;
+	align-items: center;
+	width: 100%;
 	height: 100%;
 	margin: 1em 0 0 0;
+	overflow: hidden;
 }
 .main__cards {
 	display: inline-flex;
@@ -253,6 +259,7 @@ body {
 	height: 0.5vh;
 }
 .card__text {
+	flex: 1 1 auto;
 	font-size: calc(var(--small) + 1px);
 	line-height: 1.5em;
 	letter-spacing: var(--spaceSecond);
@@ -269,7 +276,7 @@ body {
 	color: var(--secondTextColor);
 }
 .container {
-	width: 80%;
+	width: 70%;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -277,13 +284,15 @@ body {
 	text-align: justify;
 }
 .container__title {
+	flex: 1 1 auto;
 	margin: 2em 0 1em 0;
 	font-size: calc(var(--big) + 3px);
 	font-weight: 900;
-	line-height: calc(var(--medium) - 2px);
+	line-height: calc(var(--big) + 3px);
 	letter-spacing: var(--spacePrimary);
 }
 .container__text {
+	flex: 1 1 auto;
 	font-size: calc(var(--medium) - 3px);
 	line-height: 1.5em;
 	letter-spacing: calc(var(--spaceSecond) + 0.3px);
@@ -303,19 +312,19 @@ body {
 	width: 20%;
 }
 .footer__image {
-	margin: 0 0 0 1.5em;
-	width: 100px;
-	height: 85px;
+	flex: 1 1 auto;
+	width: 5em;
+	height: 5em;
 }
 .footer__image.--facebook {
-	background: url("../../src/images/facebook.jpg") no-repeat;
+	background: url("../../src/images/facebook.png") no-repeat;
 }
 
 .footer__image.--instagram {
-	background: url("../../src/images/instagram.jpg") no-repeat;
+	background: url("../../src/images/instagram.png") no-repeat;
 }
 .footer__image.--telegram {
-	background: url("../../src/images/telegram.jpg") no-repeat;
+	background: url("../../src/images/telegram.png") no-repeat;
 }
 .footer__link {
 	font-size: calc(var(--small) + 1px);
@@ -333,7 +342,6 @@ html {
 }
 @media (max-width: 780px) {
 	body {
-		overflow-x: hidden;
 		width: 100%;
 		height: 100%;
 	}
@@ -344,6 +352,7 @@ html {
 		width: 100%;
 		height: 100%;
 	}
+
 	html {
 		font-size: 12px;
 	}
