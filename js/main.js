@@ -16,8 +16,7 @@ const resetProperties = () => {
 	svg.setAttribute(svgValues[2], [100, 300, 1440, 500]);
 };
 
-function changeSvgSize(e) {
-	console.log(e);
+function changeSvgSize() {
 	if (window.visualViewport.width <= 600) {
 		console.log(window.visualViewport);
 		svg.setAttribute(svgValues[0], propertiesSvg.width);
@@ -30,5 +29,8 @@ function changeSvgSize(e) {
 		console.log("hola");
 	}
 }
+
+changeSvgSize()
+
 window.addEventListener("resize", changeSvgSize);
 d.addEventListener("resize", changeSvgSize);
