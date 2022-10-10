@@ -18,7 +18,6 @@ const resetProperties = () => {
 
 function changeSvgSize() {
 	if (window.visualViewport.width <= 600) {
-		console.log(window.visualViewport);
 		svg.setAttribute(svgValues[0], propertiesSvg.width);
 		svg.setAttribute(svgValues[1], propertiesSvg.height);
 		svg.setAttribute(svgValues[2], propertiesSvg.viewBox);
@@ -26,11 +25,10 @@ function changeSvgSize() {
 	}
 	if (window.visualViewport.width > 600) {
 		resetProperties();
-		console.log("hola");
 	}
 }
 
-changeSvgSize()
+//changeSvgSize();
 
 window.addEventListener("resize", changeSvgSize);
-d.addEventListener("resize", changeSvgSize);
+d.addEventListener("DOMContentLoaded", changeSvgSize);

@@ -82,6 +82,7 @@ body {
 	height: calc(58px * 100% / var(--heighContainer));
 }
 .menu__item {
+	text-align: center;
 	flex: 1 1 auto;
 }
 .menu__link {
@@ -355,7 +356,8 @@ html {
 		gap: 1em;
 	}
 	.header__title {
-		width: 50%;
+		text-align: center;
+		width: 100%;
 	}
 	.header__nav {
 		width: 80%;
