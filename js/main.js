@@ -21,7 +21,6 @@ function changeSvgSize() {
 		svg.setAttribute(svgValues[0], propertiesSvg.width);
 		svg.setAttribute(svgValues[1], propertiesSvg.height);
 		svg.setAttribute(svgValues[2], propertiesSvg.viewBox);
-		console.log("aqui");
 	}
 	if (window.visualViewport.width > 600) {
 		resetProperties();
