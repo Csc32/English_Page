@@ -325,6 +325,10 @@ body {
 .footer__link:hover {
 	color: var(--lightBg);
 }
+.footer__title {
+	color: var(--lightTextColor);
+	font-size: 1.2rem;
+}
 
 html {
 	scroll-behavior: smooth;
