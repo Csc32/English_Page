@@ -59,7 +59,7 @@
 			</div>
 		</header>
 		<main class="main">
-			<div class="main__cards">
+			<section class="main__cards">
 				<article class="card">
 					<div class="card__content">
 						<div class="card__bg">
@@ -129,7 +129,17 @@
 						</p>
 					</div>
 				</article>
-			</div>
+			</section>
+			<section class="main__columns">
+				<img
+					src="./src/images/estudiantes.jpg"
+					class="column__image --student" />
+				<p class="column__text">
+					La <span class="column__emphasize">educacion</span> es lo primero, por
+					eso nos enfocamos en dar clases tanto de forma presencial como de
+					forma online atendiendo a las necesidades de los estudiantes
+				</p>
+			</section>
 			<section class="main__content">
 				<article class="container">
 					<h2 class="container__title">¿Quienes somos?</h2>
@@ -156,6 +166,39 @@
 						responderemos todas tus dudas ✌.
 					</p>
 				</article>
+			</section>
+			<section class="main__form">
+				<h2 class="form__title">
+					¿Necesitas mas informacion? Envianos un mensaje!!!
+				</h2>
+				<img
+					src="./src/images/educacion_1.jpg"
+					alt="persona en computadora"
+					class="form__img" />
+				<form action="" class="form__container">
+					<div class="form__separator">
+						<label for="name" class="form__title">Ingrese su nombre</label>
+						<input type="text" id="name" class="form__input" id="name" />
+					</div>
+					<div class="form__separator">
+						<label for="lastname" class="form__title"
+							>Ingrese su apellido</label
+						>
+						<input type="text" class="form__input" id="lastname" />
+					</div>
+					<div class="form__separator">
+						<label for="message" class="form__title">Escriba su mensaje:</label>
+						<textarea
+							name=""
+							id="message"
+							cols="30"
+							rows="10"
+							class="form__input --text__area"></textarea>
+					</div>
+					<div class="form__separator">
+						<button type="submit" class="form__btn">Enviar mensaje</button>
+					</div>
+				</form>
 			</section>
 		</main>
 		<footer class="footer">
