@@ -35,6 +35,30 @@ body {
 	background: var(--lightBg);
 	position: relative;
 }
+.arrow-up {
+	width: 4%;
+	height: 5vh;
+	position: fixed;
+	z-index: 10;
+	bottom: 1em;
+	right: 1em;
+	border-radius: 40%;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease 0.4s;
+}
+.arrow-up.show {
+	visibility: visible;
+	background: hsla(275, 39%, 25%, 0.469);
+	opacity: 1;
+}
+.arrow__image {
+	filter: brightness(0) opacity(1) contrast(100%) saturate(100%) sepia(1)
+		invert(1);
+}
 .header {
 	display: flex;
 	flex-flow: row wrap;
@@ -342,6 +366,7 @@ body {
 	width: 100%;
 }
 .form__title {
+	text-align: center;
 	font-size: var(--big);
 	font-weight: 600;
 	color: var(--lightTextColor);
@@ -381,11 +406,21 @@ body {
 }
 .footer {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
+	flex-flow: column wrap;
+	justify-content: center;
 	align-items: center;
+	gap: 1em;
+	padding: 0.5em 0;
 	min-height: 5em;
 	background: var(--secondTextColor);
+}
+.footer__div {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: column wrap;
+	gap: 1em;
 }
 .footer__container {
 	display: flex;
@@ -398,8 +433,8 @@ body {
 	flex: 1 1 auto;
 	width: 3em;
 	height: 3em;
-	filter: invert(1) sepia(1) saturate(10%) contrast(100%) opacity(1);
-	transition: filter 0.3s;
+	filter: invert(0.5) sepia(1) saturate(10%) contrast(100%) opacity(1);
+	transition: filter ease 0.5s;
 }
 .footer__link {
 	font-size: var(--small);
@@ -408,8 +443,13 @@ body {
 	color: var(--primaryTextColor);
 	transition: 0.3s ease;
 }
-.footer__link:hover {
-	color: var(--lightBg);
+.footer__link:hover .footer__image {
+	filter: invert(1) sepia(1) saturate(90%) contrast(200%) opacity(1);
+	transition: all ease 0.5s;
+}
+.footer__text {
+	color: var(--lightTextColor);
+	font-size: var(--medium);
 }
 .footer__title {
 	color: var(--lightTextColor);
@@ -482,5 +522,11 @@ html {
 	}
 	.footer {
 		font-size: calc(var(--small) -2px);
+	}
+}
+
+@media (width > 480px) {
+	.footer__div {
+		flex-flow: row wrap;
 	}
 }
