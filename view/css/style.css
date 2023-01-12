@@ -97,13 +97,31 @@ body {
 .menu__link {
 	flex: 1 1 auto;
 	padding: auto;
+	position: relative;
 	width: 100%;
 	text-align: center;
-	font-size: calc(1px + var(--small));
+	font-size: calc(0.4rem + var(--small));
 	font-weight: bold;
 	letter-spacing: var(--spaceSecond);
 	text-decoration: none;
+	padding: 0.2em 0;
 	color: var(--lightTextColor);
+}
+.menu__link::after {
+	background: var(--primaryTextColor);
+	content: "";
+	display: inline-block;
+	height: 2px;
+	margin: auto;
+	position: absolute;
+	bottom: -0px;
+	left: 0;
+	right: 0;
+	transition: all 300ms;
+	width: 0%;
+}
+.menu__link:hover::after {
+	width: 100%;
 }
 .background {
 	overflow-x: hidden;
