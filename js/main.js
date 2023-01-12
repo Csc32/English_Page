@@ -1,33 +1,24 @@
-/* const d = document;
+const d = document;
 
-const svg = d.getElementById("svg");
+const btnArrow = d.getElementById("btnArrow");
 
-const propertiesSvg = {
-	width: 900,
-	height: 700,
-	viewBox: [250, 230, 900, 700],
-};
-
-const svgValues = ["width", "height", "viewBox"];
-
-const resetProperties = () => {
-	svg.setAttribute(svgValues[0], 1440);
-	svg.setAttribute(svgValues[1], 500);
-	svg.setAttribute(svgValues[2], [100, 300, 1440, 500]);
-};
-
-function changeSvgSize() {
-	if (window.visualViewport.width <= 600) {
-		svg.setAttribute(svgValues[0], propertiesSvg.width);
-		svg.setAttribute(svgValues[1], propertiesSvg.height);
-		svg.setAttribute(svgValues[2], propertiesSvg.viewBox);
-	}
-	if (window.visualViewport.width > 600) {
-		resetProperties();
-	}
+function showBtn() {
+	btnArrow.classList.add("show");
 }
- */
-//changeSvgSize();
-
-/* window.addEventListener("resize", changeSvgSize);
-d.addEventListener("DOMContentLoaded", changeSvgSize); */
+function hideBtn() {
+	btnArrow.classList.remove("show");
+}
+function scrollToUp(e) {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+}
+btnArrow.addEventListener("click", scrollToUp);
+window.addEventListener("scroll", (e) => {
+	if (scrollY >= 689) {
+		showBtn();
+	} else {
+		hideBtn();
+	}
+});
