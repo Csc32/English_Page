@@ -1,4 +1,4 @@
-const d = document;
+/* const d = document;
 
 const svg = d.getElementById("svg");
 
@@ -26,8 +26,8 @@ function changeSvgSize() {
 		resetProperties();
 	}
 }
-
+ */
 //changeSvgSize();
 
-window.addEventListener("resize", changeSvgSize);
-d.addEventListener("DOMContentLoaded", changeSvgSize);
+/* window.addEventListener("resize", changeSvgSize);
+d.addEventListener("DOMContentLoaded", changeSvgSize); */
