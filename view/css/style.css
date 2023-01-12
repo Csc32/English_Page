@@ -111,10 +111,10 @@ body {
 	top: 0;
 	right: 0;
 	width: 100%;
-	min-height: 45vh;
+	min-height: 55vh;
 	background: var(--primaryBg);
 	z-index: -1;
-	clip-path: polygon(0 0, 100% 0, 100% 50%, 76% 85%, 28% 86%, 0% 50%);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 49% 100%, 0% 50%);
 }
 .main {
 	position: relative;
@@ -165,7 +165,7 @@ body {
 .main__buttom {
 	font-size: var(--small);
 	text-decoration: none;
-	width: 16vw;
+	width: 30vw;
 	height: 5vh;
 	text-align: center;
 	padding: 1em;
@@ -229,7 +229,7 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	width: 25%;
+	width: 50%;
 	height: 6vh;
 	padding: 1.2em 1.3em;
 	border-radius: 5px;
@@ -259,17 +259,16 @@ body {
 	color: var(--thirdTextColor);
 }
 .main__columns {
-	margin-top: 2em;
 	display: flex;
-	flex-flow: row wrap;
+	margin-top: 2em;
+	flex-flow: column wrap;
 	justify-content: center;
 	font-size: var(--big);
 	align-items: center;
-	gap: 2em;
+	gap: 1.5em;
 }
 .column__text {
 	width: 36%;
-	height: 70vh;
 	line-height: 3.5rem;
 	text-align: left;
 	letter-spacing: var(--spaceSecond);
@@ -280,7 +279,6 @@ body {
 }
 
 .column__image {
-	margin-top: 5em;
 	height: 60vh;
 	border-radius: 2em;
 	order: 1;
@@ -460,24 +458,31 @@ html {
 	scroll-behavior: smooth;
 	font-size: 13px;
 }
-@media (max-width: 780px) {
-	body {
-		width: 100%;
-		height: 100%;
+@media (width > 680px) {
+	.main__buttom {
+		width: 16vw;
 	}
-	.card__bg {
-		width: 60%;
+	.main__cards {
+		margin: 5em 0;
 	}
 	.card__icon {
 		width: 100%;
 		height: 100%;
 	}
-
+	.main__columns {
+		flex-flow: row wrap;
+		margin-top: 4em;
+	}
+	.column__text {
+		height: vh;
+		width: 25%;
+		height: 72vh;
+	}
 	html {
 		font-size: 12px;
 	}
 }
-@media (max-width: 520px) {
+@media (width < 520px) {
 	.header__main {
 		width: 100%;
 		flex-flow: column wrap;
@@ -500,22 +505,12 @@ html {
 		justify-content: space-evenly;
 		gap: 0.9em;
 	}
-
-	.header__text.header__text--big {
-		font-size: calc(var(--small) + 2px);
-		line-height: 3rem;
-	}
-	.header__buttom {
-		width: 100vw;
-		height: 7vh;
-	}
-
 	.main__cards {
 		display: flex;
 		flex-flow: column wrap;
 	}
 	.card {
-		width: 75%;
+		width: 100%;
 		height: 50%;
 		padding: 0.5em;
 		gap: 5px;
