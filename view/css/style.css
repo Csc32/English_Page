@@ -129,7 +129,7 @@ body {
 	top: 0;
 	right: 0;
 	width: 100%;
-	min-height: 55vh;
+	min-height: 90vh;
 	background: var(--primaryBg);
 	z-index: -1;
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 49% 100%, 0% 50%);
@@ -496,6 +496,9 @@ html {
 		width: 25%;
 		height: 72vh;
 	}
+	.background {
+		min-height: 55vh;
+	}
 	html {
 		font-size: 12px;
 	}
@@ -541,5 +544,18 @@ html {
 @media (width > 480px) {
 	.footer__div {
 		flex-flow: row wrap;
+	}
+}
+@media (width < 400px) {
+	.header__nav {
+		min-height: 15vh;
+	}
+	.header__nav,
+	.header__menu {
+		width: 100%;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
 	}
 }
