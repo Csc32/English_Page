@@ -129,7 +129,7 @@ body {
 	top: 0;
 	right: 0;
 	width: 100%;
-	min-height: 90vh;
+	min-height: 100vh;
 	background: var(--primaryBg);
 	z-index: -1;
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 49% 100%, 0% 50%);
