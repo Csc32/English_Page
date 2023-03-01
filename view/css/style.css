@@ -9,14 +9,14 @@
 	--secondTextColor: #252b42;
 	--dangerColor: #f67b86;
 	--highlight-color: #ffc964;
-	--family: "Montserrat";
+	--family: "Montserrat", "serif";
 	--extraBig: 2.5rem;
 	--big: 2.3rem;
 	--medium: 2rem;
 	--small: 1rem;
 	--spacePrimary: 0.1px;
 	--spaceSecond: 0.2px;
-	--border-radius: 0.2em;
+	--border-radius: 0.5em;
 }
 * {
 	margin: 0;
@@ -68,6 +68,7 @@ body {
 	text-shadow: -3px 2px #252b42;
 	font-size: var(--medium);
 	font-style: italic;
+	flex: 1 1 auto;
 }
 .header__nav {
 	width: 100%;
@@ -88,7 +89,7 @@ body {
 .menu__link {
 	position: relative;
 	text-decoration: none;
-	color: var(--lightBg);
+	color: var(--lightTextColor);
 }
 .menu__link::after {
 	content: "";
@@ -111,7 +112,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 170vh;
+	min-height: 100vh;
 	z-index: -1;
 	background: var(--primaryBg);
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 49% 100%, 0% 50%);
@@ -182,4 +183,39 @@ body {
 .main__buttom.main__buttom--fill:hover {
 	background: transparent;
 	color: var(--lightTextColor);
+}
+.main__cards {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+.card {
+	width: 80%;
+}
+.card__content {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	background: var(--lightBg);
+	box-shadow: 6px 6px 5px #8e8d8d36, -6px -6px 5px #7e7e7e6a;
+	min-height: 35vh;
+	padding: 1em;
+	border-radius: var(--border-radius);
+	gap: 0.5em;
+}
+.card__bg {
+	background: var(--highlight-color);
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	border-radius: var(--border-radius);
+	padding: 1em;
+}
+.card__icon {
+	filter: invert(1);
 }
