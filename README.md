@@ -1,7 +1,8 @@
-# English Page
+# React + Vite
 
-This is a English page that contains services about make works in english
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![Front page](./src/images/Portada.png)
+Currently, two official plugins are available:
 
-**note:** The icons of the social networks can be found in -> [iconos8.es](https://iconos8.es/)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
