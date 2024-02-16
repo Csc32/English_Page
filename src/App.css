@@ -55,6 +55,7 @@
 
 @layer base {
   html {
+    @apply bg-gray-300;
     font-family: 'Montserrat';
   }
 }
