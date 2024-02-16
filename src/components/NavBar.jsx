@@ -12,6 +12,13 @@ export default function NavBar() {
       name: 'Contactanos',
     },
   ];
+  const [hidden, setHidden] = useState(false);
+  const updateVisibility = () => setHidden(!hidden);
+  useEffect(() => {
+    const subMenu = document.getElementById('navbar-sticky');
+    subMenu.classList.toggle('hidden');
+  }, [hidden]);
+
   return (
     <nav className="bg-indigo-900 text-white dark:bg-indigo-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
