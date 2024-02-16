@@ -1,21 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from './Button.jsx';
 import HamburgerButton from './HamburgerButton.jsx';
-import Item from './Item.jsx';
-import { useEffect } from 'react';
+import Menu from './Menu.jsx';
 
 export default function NavBar() {
-  const NavBarItems = [
-    {
-      name: 'Sevicios',
-    },
-    {
-      name: 'Precios',
-    },
-    {
-      name: 'Contactanos',
-    },
-  ];
   const [hidden, setHidden] = useState(false);
   const updateVisibility = () => setHidden(!hidden);
   useEffect(() => {
@@ -36,16 +24,7 @@ export default function NavBar() {
             updateVisibility={updateVisibility}
           />
         </div>
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col text-indigo-300 p-4 md:p-0 mt-4 font-medium border border-indigo-100 rounded-lg bg-indigo-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-indigo-900 dark:bg-indigo-300 md:dark:indigo-500 dark:indigo-700">
-            {NavBarItems.map((el) => (
-              <Item name={el.name} />
-            ))}
-          </ul>
-        </div>
+        <Menu />
       </div>
     </nav>
   );
