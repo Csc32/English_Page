@@ -42,3 +42,20 @@ export const CARDS_ELEMENTS = [
     imageInfo: 'Calendar',
   },
 ];
+export const ABOUT_ELEMENTS = [
+  {
+    title: '¿Quienes somos?',
+    description:
+      'Somos futuros docentes, estudiantes de la Universidad Pedagogica Experimental Libertador, con amplios conocimientos en ingles y pedagia apasionados por nuestra labor.',
+  },
+  {
+    title: '¿Que te podemos ofrecer? ',
+    description:
+      'Te ofrecemos asesorias virtuales, cursos de ingles, elaboracion de tareas en ingles, entre otros. Además de clases de calidad 😎.',
+  },
+  {
+    title: '¿Como te puedes comunicar con nosotros ?',
+    description:
+      'A traves de nuestras redes sociales, puedes seguirnos por instagram, facebook o nuestro canal de telegram 😄, por esos medios responderemos todas tus dudas ✌.',
+  },
+];
