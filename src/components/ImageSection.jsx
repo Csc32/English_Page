@@ -1,11 +1,7 @@
 import background from '../images/education.png';
+import { TEXTS } from '../constants.js';
 
 export default function ImageSection() {
-  const TEXTS = [
-    'Se parte de una comunidad que te ayuda a crecer económicamente.',
-    'Conéctate con amigos y familiares de todo el mundo. No pierdas esta oportunidad',
-    'Descubre nuevas formas de aprender inglés y mucho más. ¡No esperes más!',
-  ];
   return (
     <div
       className="w-full flex flex-col justify-center items-center bg-cover h-72 md:h-80 lg:h-96 gap-5 py-5 pt-32 md:pt-5 text-white relative"
