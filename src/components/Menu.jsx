@@ -1,5 +1,5 @@
 import Item from './Item.jsx';
-import ITEMS from '../constants.js';
+import { ITEMS } from '../constants.js';
 
 export default function Menu() {
   return (
