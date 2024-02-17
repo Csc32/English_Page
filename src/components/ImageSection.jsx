@@ -20,7 +20,7 @@ export default function ImageSection() {
       <h3 className="z-10">{TEXTS[0]}</h3>
       <a
         href="#"
-        className="z-10 text-blue-300 font-bold text-sm  transition ease-linear duration-700 hover:text-white hover:bg-white"
+        className="relative z-10 text-indigo-300 font-bold text-sm  transition ease-linear duration-300 hover:text-white"
       >
         Unete a Nosotros
       </a>
