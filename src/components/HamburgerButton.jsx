@@ -8,7 +8,7 @@ export default function HamburgerButton({ hidden, updateVisibility }) {
       type="button"
       className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-indigo-500 dark:focus:ring-indigo-600"
       aria-controls="navbar-sticky"
-      aria-expanded="false"
+      aria-expanded={hidden}
       onClick={handleClick}
     >
       <span className="sr-only">Open main menu</span>
