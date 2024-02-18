@@ -1,6 +1,6 @@
-import teachers from './images/teachers.png';
-import calendar from './images/calendar.png';
-import didactic from './images/recursos didacticos.png';
+import teachers from './images/teachers.avif';
+import calendar from './images/calendar.avif';
+import didactic from './images/recursos didacticos.avif';
 import github from './images/github.png';
 import instagram from './images/instagram.png';
 

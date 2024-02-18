@@ -1,4 +1,4 @@
-import background from '../images/education.png';
+import background from '../images/education.avif';
 import { TEXTS } from '../constants.js';
 
 export default function ImageSection() {
