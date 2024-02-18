@@ -1,6 +1,6 @@
 import background from '../images/education.avif';
 import { TEXTS } from '../constants.js';
-
+import { TypeAnimation } from 'react-type-animation';
 export default function ImageSection() {
   return (
     <div
@@ -13,7 +13,19 @@ export default function ImageSection() {
       <h2 className="w-full text-3xl font-bold mt-5 z-10">
         You can Learn English
       </h2>
-      <h3 className="z-10">{TEXTS[0]}</h3>
+      <h3 className="z-10 flex w-full">
+        <TypeAnimation
+          sequence={[TEXTS[0], 2000, TEXTS[1], 2000, TEXTS[2], 2000]}
+          wrapper="span"
+          speed={70}
+          style={{
+            fontSize: '1em',
+            fontWeight: 'bold',
+            flex: '1 1 auto',
+          }}
+          repeat={Infinity}
+        />
+      </h3>
       <a
         href="#"
         className="relative z-10 text-indigo-300 font-bold text-sm  transition ease-linear duration-300 hover:text-white"
