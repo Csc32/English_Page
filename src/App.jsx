@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection.jsx';
 import EducationSection from './components/EducationSection.jsx';
 import Form from './components/Form.jsx';
 import bgImage from './images/educacion_1.jpg';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <Form />
       </section>
+      <Footer />
     </>
   );
 }
