@@ -9,7 +9,9 @@ export default function NavBar() {
   const updateVisibility = () => setHidden(!hidden);
   useEffect(() => {
     const subMenu = document.getElementById('navbar-sticky');
-    subMenu.classList.toggle('hidden');
+    if (subMenu) {
+      subMenu.classList.toggle('hidden');
+    }
   }, [hidden]);
 
   return (
