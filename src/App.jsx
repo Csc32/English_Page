@@ -26,7 +26,7 @@ function App() {
       <section
         className="w-full p-4 flex flex-col justify-center items-center gap-10 mt-5 relative bg-cover"
         style={{
-          backgroundImage: `url(${bgImage}) no-repeat`,
+          backgroundImage: `url(${bgImage})`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
