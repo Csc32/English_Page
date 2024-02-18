@@ -4,7 +4,7 @@ import Button from './Button.jsx';
 
 export default function Form() {
   return (
-    <form className="w-full text-left text-sm z-10">
+    <form className="w-full text-left text-sm flex flex-col justify-center items-center z-10">
       {INPUT_CONTENTS.map((el) => (
         <Input
           inputName={el.inputName}
@@ -14,17 +14,17 @@ export default function Form() {
           key={el.id}
         />
       ))}
-      <div className="w-full flex flex-col mb-5">
+      <div className="w-full flex flex-col justify-center mb-5 lg:w-1/2">
         <label
           htmlFor="message"
-          className="block mb-2 text-sm font-bold text-white flex-1"
+          className="mb-2 text-sm font-bold text-white flex-1"
         >
           Escriba su mensaje
         </label>
         <textarea
           id="message"
           rows="4"
-          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-400 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-400 focus:border-gray-500"
           placeholder="Tu mensaje"
         ></textarea>
       </div>
