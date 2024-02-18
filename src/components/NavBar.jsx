@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from './Button.jsx';
 import HamburgerButton from './HamburgerButton.jsx';
 import Menu from './Menu.jsx';
+import { BUTTON_STYLES } from '../constants.js';
 
 export default function NavBar() {
   const [hidden, setHidden] = useState(false);
@@ -18,7 +19,11 @@ export default function NavBar() {
           MCO Learning
         </h1>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Button name="Registrarse" />
+          <Button
+            name={BUTTON_STYLES[0].normal.name}
+            style={BUTTON_STYLES[0].normal.style}
+            type={BUTTON_STYLES[0].normal.type}
+          />
           <HamburgerButton
             hidden={hidden}
             updateVisibility={updateVisibility}
