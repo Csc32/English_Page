@@ -1,6 +1,8 @@
 import teachers from './images/teachers.png';
 import calendar from './images/calendar.png';
 import didactic from './images/recursos didacticos.png';
+import github from './images/github.png';
+import instagram from './images/instagram.png';
 
 export const ITEMS = [
   {
@@ -89,5 +91,19 @@ export const BUTTON_STYLES = [
       name: 'Enviar Mensaje',
       type: 'submit',
     },
+  },
+];
+export const SOCIAL_MEDIA = [
+  {
+    title: 'Realizado por:',
+    alt: 'Github',
+    img: github,
+    link: 'https://github.com/Csc32',
+  },
+  {
+    title: 'Siguenos en:',
+    alt: 'Instagram',
+    img: instagram,
+    link: '#',
   },
 ];
