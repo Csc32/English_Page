@@ -15,7 +15,7 @@ function App() {
       <section className="w-full">
         <ImageSection />
       </section>
-      <section className="w-full p-8">
+      <section className="w-full flex flex-col justify-center p-8 gap-5 lg:flex-row lg:justify-evenly lg:items-center">
         <CardSection />
       </section>
       <section className="w-full ">
