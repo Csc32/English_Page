@@ -4,7 +4,7 @@ import { TEXTS } from '../constants.js';
 export default function ImageSection() {
   return (
     <div
-      className="w-full flex flex-col justify-center items-center bg-cover h-72 md:h-80 lg:h-96 gap-5 py-5 pt-32 md:pt-5 text-white relative"
+      className="w-full flex flex-col justify-center items-center bg-cover h-80 md:h-80 lg:h-96 gap-5 py-5 pt-32 md:pt-5 text-white relative"
       style={{
         backgroundImage: `url(${background})`,
       }}

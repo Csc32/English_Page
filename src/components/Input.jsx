@@ -1,6 +1,6 @@
 export default function Input({ inputName, type, id, placeholder }) {
   return (
-    <div className="w-full flex flex-col gap-2 mb-5">
+    <div className="w-full flex flex-col gap-2 mb-5 lg:w-1/2">
       <label
         htmlFor={id}
         className="block mb-2 text-sm font-bold text-white flex-1"
