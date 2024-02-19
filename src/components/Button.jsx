@@ -1,7 +1,7 @@
 export default function Button({ name, style, type }) {
   return (
     <button type={type} className={style}>
-      {name}
+      {name.toUpperCase()}
     </button>
   );
 }
