@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-	--primaryBg: #563d7b;
-	--lightBg: #e5e5e5;
-	--primaryTextColor: #23a6f0;
+	--primaryBg: #312e81;
+	--lightBg: #e5e7eb;
+	--poorPrimary: #a5b4fc;
+	--primaryTextColor: #1d4ed8;
 	--lightTextColor: #fff;
-	--highlight-text: #8e5c99;
-	--secondTextColor: #252b42;
-	--dangerColor: #f67b86;
-	--highlight-color: #ffc964;
 	--family: "Montserrat", "serif";
 	--extraBig: 2.5rem;
-	--big: 2.3rem;
-	--medium: 2rem;
+	--big: 2rem;
+	--medium: 1.2rem;
 	--small: 1rem;
 	--spacePrimary: 0.1px;
 	--spaceSecond: 0.2px;
@@ -58,20 +55,19 @@ body {
 	width: 100%;
 	background: var(--primaryBg);
 	color: var(--lightTextColor);
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	position: relative;
+	padding: 1.8rem;
 	gap: 0.5em;
 }
 .header__title {
-	text-shadow: -3px 2px #252b42;
-	font-size: var(--medium);
-	font-style: italic;
+	font-size: var(--big);
 	flex: 1 1 auto;
 }
 .header__nav {
-	width: 100%;
+	width: 30em;
 }
 .header__menu {
 	list-style-type: none;
@@ -79,17 +75,18 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	gap: 1em;
 }
 .menu__item {
 	text-align: center;
-	font-weight: bold;
-	padding: 0.5em 0;
+	font-weight: 500;
 	flex: 1 1 auto;
+	font-size: var(--medium);
 }
 .menu__link {
 	position: relative;
 	text-decoration: none;
-	color: var(--lightTextColor);
+	color: var(--poorPrimary);
 }
 .menu__link::after {
 	content: "";
@@ -130,13 +127,13 @@ body {
 	gap: 5em;
 }
 .main__container {
-	width: inherit;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: var(--lightTextColor);
+	margin: 2em 0;
 	gap: 2em;
 }
 
@@ -206,7 +203,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	background: var(--lightBg);
-	box-shadow: 6px 6px 5px #8e8d8d36, -6px -6px 5px #7e7e7e6a;
+	box-shadow:
+		6px 6px 5px #8e8d8d36,
+		-6px -6px 5px #7e7e7e6a;
 	min-height: 35vh;
 	padding: 1em;
 	border-radius: var(--border-radius);
@@ -222,4 +221,7 @@ body {
 }
 .card__icon {
 	filter: invert(1);
+}
+.html {
+	font-size: 16px;
 }
