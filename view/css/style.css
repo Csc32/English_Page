@@ -111,11 +111,15 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	min-height: 100vh;
+
 	z-index: -1;
-	background: var(--primaryBg);
-	clip-path: polygon(0 0, 100% 0, 100% 50%, 49% 100%, 0% 50%);
+	background: no-repeat center / cover url("../../src/images/education.avif");
+	& .layer {
+		width: 100vw;
+		min-height: 70vh;
+		background-color: #00000075;
+		z-index: 1;
+	}
 }
 .main {
 	width: 100%;
