@@ -1,13 +1,204 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MCO Learning</title>
+		<link rel="stylesheet" href="./view/css/style.css" />
+		<meta name="keywords" content="ingles curso trabajos" />
+	</head>
+	<body>
+		<button class="arrow-up" id="btnArrow">
+			<img class="arrow__image" src="./src/images/arrow.png" alt="flecha" />
+		</button>
+		<header class="header" id="header">
+			<h1 class="header__title">MCO Learning</h1>
+			<nav class="header__nav">
+				<ul class="header__menu hidde">
+					<li class="menu__item">
+						<a href="" class="menu__link">Servicios</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">Precios</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">Contactos</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="background"></div>
+		<main class="main">
+			<!-- 			<img src="./src/svg/Vector.svg" alt="" class="background" /> -->
+			<section class="main__container">
+				<h4 class="main__subtitle">Welcome</h4>
+				<h2 class="main__text main__text--big">You can learn english</h2>
+				<h3 class="main__text main__text--small">
+					¿Quieres aprender ingles? Unetenos
+				</h3>
+				<div class="main__buttoms">
+					<a href="" class="main__buttom main__buttom--fill">Trabajos</a>
+					<a href="" class="main__buttom main__buttom--light">Leer mas</a>
+				</div>
+			</section>
+			<section class="main__cards">
+				<article class="card">
+					<div class="card__content">
+						<div class="card__bg">
+							<img
+								src="./src/svg/coolicon.svg"
+								alt="Icono de bandera"
+								class="card__icon" />
+						</div>
+						<h3 class="card__title">Estudiantes pedagogos</h3>
+						<hr class="card__separator" />
+						<p class="card__text">
+							Contamos con un grupo de personas capaces de enseñar y solventar
+							todas tus dudas, para asi mejorar tus notas en ingles.
+						</p>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card__content">
+						<div class="card__bg">
+							<img
+								src="./src/svg/coolicon2.svg"
+								alt="Simbolo de rotar"
+								class="card__icon" />
+						</div>
+						<h3 class="card__title">Recursos de calidad</h3>
+						<hr class="card__separator" />
+						<p class="card__text">
+							Preparamos a tus necesidades los recursos didacticos que te
+							ayudaran a mejorar tus habilidades en el idioma ingles.
+						</p>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card__content">
+						<div class="card__bg">
+							<img
+								src="./src/svg/coolicon3.svg"
+								alt="Simbolo de rotar"
+								class="card__icon" />
+						</div>
+						<h3 class="card__title">Profesores flexibles</h3>
+						<hr class="card__separator" />
+						<p class="card__text">
+							Contamos con un horario para atenderte de la manera mas comoda
+							para garantizar una educacion de calidad
+						</p>
+					</div>
+				</article>
+			</section>
+			<section class="main__columns">
+				<img
+					src="./src/images/estudiantes.jpg"
+					class="column__image --student" />
+				<p class="column__text">
+					La <span class="column__emphasize">educacion</span> es lo primero, por
+					eso nos enfocamos en dar clases tanto de forma presencial como de
+					forma online atendiendo a las necesidades de los estudiantes
+				</p>
+			</section>
+			<section class="main__content">
+				<article class="container">
+					<h2 class="container__title">¿Quienes somos?</h2>
+					<p class="container__text">
+						Somos futuros docentes, estudiantes de la Universidad Pedagogica
+						Experimental Libertador, con amplios conocimientos en ingles y
+						pedagia apasionados por nuestra labor.
+					</p>
+				</article>
+				<article class="container">
+					<h2 class="container__title">¿Que te podemos ofrecer?</h2>
+					<p class="container__text">
+						Te ofrecemos asesorias virtuales, cursos de ingles, elaboracion de
+						tareas en ingles, entre otros. Además de clases de calidad 😎.
+					</p>
+				</article>
+				<article class="container">
+					<h2 class="container__title">
+						¿Como te puedes comunicar con nosotros?
+					</h2>
+					<p class="container__text">
+						A traves de nuestras redes sociales, puedes seguirnos por instagram,
+						facebook o nuestro canal de telegram 😄, por esos medios
+						responderemos todas tus dudas ✌.
+					</p>
+				</article>
+			</section>
+			<section class="main__form">
+				<div class="container__form">
+					<h2 class="form__title">
+						¿Necesitas mas informacion? Envianos un mensaje!!!
+					</h2>
+					<form action="" class="form__container">
+						<article class="form__separator">
+							<label for="name" class="form__title">Ingrese su nombre</label>
+							<input type="text" id="name" class="form__input" id="name" />
+						</article>
+						<article class="form__separator">
+							<label for="lastname" class="form__title"
+								>Ingrese su apellido</label
+							>
+							<input type="text" class="form__input" id="lastname" />
+						</article>
+						<article class="form__separator">
+							<label for="message" class="form__title"
+								>Escriba su mensaje:</label
+							>
+							<textarea
+								name=""
+								id="message"
+								cols="30"
+								rows="10"
+								class="form__input --text__area"></textarea>
+						</article>
+						<article class="form__separator">
+							<button type="submit" class="form__btn">Enviar mensaje</button>
+						</article>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__div">
+				<article class="footer__container">
+					<p class="footer__text">Realizado por:</p>
+					<a
+						href="https://github.com/Csc32"
+						target="_blank"
+						class="footer__link">
+						<img
+							src="src/images/github.png"
+							alt="instagram logo"
+							class="footer__image" />
+					</a>
+				</article>
+				<article class="footer__container">
+					<p class="footer__text">Siguenos en:</p>
+					<a
+						href="https://instagram.com/mcoelearning?igshid=YmMyMTA2M2Y="
+						target="_blank"
+						class="footer__link">
+						<img
+							src="src/images/instagram.png"
+							alt="instagram logo"
+							class="footer__image" />
+					</a>
+				</article>
+			</div>
+			<p class="footer__title">Derechos Reservados 2023</p>
+			<!-- All icons can be found here -> https://iconos8.es/ -->
+		</footer>
+		<script src="./js/main.js"></script>
+
+		<div class="container">
+			<input type="checkbox" name="" id="" />
+			<label for=""></label>
+		</div>
+	</body>
 </html>
