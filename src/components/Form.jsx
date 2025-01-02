@@ -26,7 +26,7 @@ export default function Form() {
           rows="4"
           className="p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-400 focus:border-gray-500"
           placeholder="Tu mensaje"
-        ></textarea>
+        />
       </div>
       <div className="flex justify-center items-center mb-5">
         <Button
