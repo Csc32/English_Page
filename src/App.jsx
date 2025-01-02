@@ -30,7 +30,7 @@ function App() {
           backgroundImage: `url(${bgImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50" />
         <Form />
       </section>
       <Footer />
