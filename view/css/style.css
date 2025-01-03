@@ -228,25 +228,53 @@ body {
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	background: var(--lightBg);
 	box-shadow:
 		6px 6px 5px #8e8d8d36,
 		-6px -6px 5px #7e7e7e6a;
-	min-height: 35vh;
+	min-height: 45vh;
 	padding: 1em;
 	border-radius: var(--border-radius);
-	gap: 0.5em;
+	gap: 1em;
 }
 .card__bg {
-	background: var(--highlight-color);
-	width: 50%;
-	height: 50%;
+	width: 100%;
+	height: 100%;
 	text-align: center;
-	border-radius: var(--border-radius);
-	padding: 1em;
+	padding: 1em auto;
 }
 .card__icon {
-	filter: invert(1);
+	width: 60%;
+	height: auto;
+}
+.card__text {
+	font-size: var(--small);
+	color: var(--mutedColor);
+	font-weight: 400;
+}
+.main__columns {
+	width: 60%;
+	display: flex;
+	flex-flow: column-reverse wrap;
+	justify-content: space-between;
+	padding: 0 1em;
+	gap: 1em;
+	& .column__image.--student {
+		height: auto;
+		flex: 1 1 auto;
+		align-self: flex-end;
+		flex-basis: 100%;
+	}
+	& .column__text {
+		width: 50%;
+		font-size: var(--medium);
+		color: var(--textPrimaryDark);
+		flex: 1 1 auto;
+		& .column__emphasize {
+			color: var(--buttonPrimary);
+		}
+	}
 }
 .html {
 	font-size: 16px;
