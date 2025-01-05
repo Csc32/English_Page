@@ -291,6 +291,38 @@ body {
 		}
 	}
 }
+.main__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 0em 2em;
+	gap: 1em;
+	& .container {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		flex: 1 1 100%;
+		min-height: 40vh;
+		max-height: 55vh;
+		padding: 2em 1em;
+		gap: 1em;
+		text-align: center;
+		background-color: var(--lightBg);
+		border-radius: 20px;
+		box-shadow:
+			inset 6px 6px 5px rgba(242, 242, 242, 0.674),
+			inset -6px -6px 5px rgba(205, 204, 204, 0.659);
+		& .container__title {
+			font-size: var(--big);
+		}
+		& .container__text {
+			color: var(--secondTextColor);
+			font-size: var(--medium);
+		}
+	}
+}
 .html {
 	font-size: 16px;
 }
