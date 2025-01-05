@@ -381,6 +381,15 @@ body {
 		}
 	}
 }
+.footer {
+	width: 100%;
+	min-height: 8vh;
+	font-size: var(--medium);
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .html {
 	font-size: 16px;
 }
