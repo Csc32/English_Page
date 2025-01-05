@@ -230,9 +230,7 @@ body {
 	align-items: center;
 	text-align: center;
 	background: var(--lightBg);
-	box-shadow:
-		6px 6px 5px #8e8d8d36,
-		-6px -6px 5px #7e7e7e6a;
+	box-shadow: 6px 6px 5px #8e8d8d36, -6px -6px 5px #7e7e7e6a;
 	min-height: 45vh;
 	padding: 1em;
 	border-radius: var(--border-radius);
@@ -310,8 +308,7 @@ body {
 		text-align: center;
 		background-color: var(--lightBg);
 		border-radius: 20px;
-		box-shadow:
-			inset 6px 6px 5px rgba(242, 242, 242, 0.674),
+		box-shadow: inset 6px 6px 5px rgba(242, 242, 242, 0.674),
 			inset -6px -6px 5px rgba(205, 204, 204, 0.659);
 		& .container__title {
 			font-size: var(--big);
@@ -319,6 +316,68 @@ body {
 		& .container__text {
 			color: var(--secondTextColor);
 			font-size: var(--medium);
+		}
+	}
+}
+.main__form {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	background: var(--primaryBg);
+	padding: 2em 0;
+	color: var(--lightTextColor);
+	.form__title {
+		flex: 1 1 100%;
+		margin: 1em 0.5em;
+		font-size: var(--big);
+	}
+	.form__container {
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		& .form__title {
+			margin: 0.5em 0;
+			font-size: var(--medium);
+			flex: 1 1 100%;
+		}
+		.form__separator {
+			width: 50%;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 0.5em;
+			.form__input {
+				width: 100%;
+				flex: 1 1 100%;
+				padding: 1em;
+				border-radius: var(--border-radius);
+				background: #e5e7ebcd;
+				border: 2px var(--lightBg);
+				outline: none;
+				transition: 0.3s ease-in-out;
+				&:focus {
+					background: var(--lightTextColor);
+				}
+			}
+			.form__btn {
+				flex: 1 1 50%;
+				margin: 0 auto;
+				padding: 1em 0.5em;
+				border-radius: var(--border-radius);
+				background: #e5e7ebcd;
+				border: none;
+				transition: 0.4s ease-in-out;
+				cursor: pointer;
+				&:hover {
+					background: var(--lightTextColor);
+				}
+			}
 		}
 	}
 }
