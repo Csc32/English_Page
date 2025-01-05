@@ -260,17 +260,17 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	padding: 2em 1em;
+	padding: 2em 1.5em;
 	gap: 2em;
 	background: var(--primaryBg);
-	& .column__container {
+	.column__container {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-evenly;
 		align-items: center;
 		flex: 1 1 100%;
 		gap: 1em;
-		& .column__text {
+		.column__text {
 			flex: 1 1 30%;
 			font-size: 1.7rem;
 			color: var(--lightTextColor);
@@ -279,11 +279,12 @@ body {
 			& .column__emphasize {
 				color: var(--poorPrimary);
 			}
+			&.--flex-order-1 {
+				order: 1;
+				text-align: left;
+			}
 		}
-		& .--flex-order-2 {
-			order: 2;
-			text-align: left;
-		}
+
 		& .column__image {
 			flex: 1 1 70%;
 			min-width: 380px;
