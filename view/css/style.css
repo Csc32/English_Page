@@ -214,7 +214,6 @@ body {
 }
 .card {
 	max-width: 25em;
-	max-height: 40vh;
 	padding: 0.5em;
 	flex: 1 1 auto;
 }
