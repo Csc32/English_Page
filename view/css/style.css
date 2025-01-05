@@ -277,7 +277,8 @@ body {
 			font-weight: 400;
 			text-align: right;
 			& .column__emphasize {
-				color: var(--poorPrimary);
+				color: #92fffd;
+				font-weight: bold;
 			}
 			&.--flex-order-1 {
 				order: 1;
