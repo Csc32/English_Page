@@ -151,37 +151,43 @@
 				</article>
 			</section>
 			<section class="main__form">
-				<div class="container__form">
-					<h2 class="form__title">
-						¿Necesitas mas informacion? Envianos un mensaje!!!
-					</h2>
-					<form action="" class="form__container">
-						<article class="form__separator">
-							<label for="name" class="form__title">Ingrese su nombre</label>
-							<input type="text" id="name" class="form__input" id="name" />
-						</article>
-						<article class="form__separator">
-							<label for="lastname" class="form__title"
-								>Ingrese su apellido</label
-							>
-							<input type="text" class="form__input" id="lastname" />
-						</article>
-						<article class="form__separator">
-							<label for="message" class="form__title"
-								>Escriba su mensaje:</label
-							>
-							<textarea
-								name=""
-								id="message"
-								cols="30"
-								rows="10"
-								class="form__input --text__area"></textarea>
-						</article>
-						<article class="form__separator">
-							<button type="submit" class="form__btn">Enviar mensaje</button>
-						</article>
-					</form>
-				</div>
+				<h2 class="form__title">
+					¿Necesitas mas informacion? Envianos un mensaje!!!
+				</h2>
+				<form action="" class="form__container">
+					<div class="form__separator">
+						<label for="name" class="form__title">Ingrese su nombre</label>
+						<input
+							type="text"
+							id="name"
+							class="form__input"
+							id="name"
+							placeholder="Juan" />
+					</div>
+					<div class="form__separator">
+						<label for="lastname" class="form__title"
+							>Ingrese su apellido</label
+						>
+						<input
+							type="text"
+							class="form__input"
+							id="lastname"
+							placeholder="Zamora" />
+					</div>
+					<div class="form__separator">
+						<label for="message" class="form__title">Escriba su mensaje:</label>
+						<textarea
+							name=""
+							id="message"
+							cols="30"
+							rows="10"
+							class="form__input --text__area"
+							placeholder="Necesito ayuda con..."></textarea>
+					</div>
+					<div class="form__separator">
+						<button type="submit" class="form__btn">Enviar mensaje</button>
+					</div>
+				</form>
 			</section>
 		</main>
 		<footer class="footer">
